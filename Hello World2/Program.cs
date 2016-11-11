@@ -21,9 +21,12 @@ namespace Hello_World
             //.Click();
 
             IWebElement buttonSearch = driver.FindElement(By.Id("sb_form_go"));
+            string toolTipText = buttonSearch.GetAttribute("title");
+         
 
-            buttonSearch.Click();
-            driver.Close();
+            //buttonSearch.Click();
+
+            //driver.Close();
         }
 
       
